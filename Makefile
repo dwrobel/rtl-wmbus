@@ -6,8 +6,8 @@ STRIP=strip
 OUTDIR=build
 OUTFILE="$(OUTDIR)/rtl_wmbus"
 CFLAGS=-Iinclude -std=gnu99
-CFLAGS_WARNINGS=-Wall -W -Waggregate-return -Wbad-function-cast -Wcast-align -Wcast-qual -Wchar-subscripts -Wcomment -Wfloat-equal -Winline -Wmain -Wmissing-noreturn -Wmissing-prototypes -Wparentheses -Wpointer-arith -Wredundant-decls -Wreturn-type -Wshadow -Wsign-compare -Wstrict-prototypes -Wswitch -Wunreachable-code -Wunused -Wuninitialized
-LIB=-lm 
+CFLAGS_WARNINGS=-Wall -W -Waggregate-return -Wbad-function-cast -Wcast-align -Wcast-qual -Wchar-subscripts -Wcomment -Wno-float-equal -Winline -Wmain -Wmissing-noreturn -Wno-missing-prototypes -Wparentheses -Wpointer-arith -Wredundant-decls -Wreturn-type -Wshadow -Wsign-compare -Wstrict-prototypes -Wswitch -Wunreachable-code -Wunused -Wuninitialized
+LIB=-lm
 SRC=rtl_wmbus.c
 
 all: $(OUTDIR) release

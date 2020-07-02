@@ -44,6 +44,7 @@
 #endif
 
 
+/*
 static float lp_1600kHz_56kHz(int sample, size_t i_or_q)
 {
     static float moving_average[2];
@@ -54,7 +55,7 @@ static float lp_1600kHz_56kHz(int sample, size_t i_or_q)
 
     return moving_average[i_or_q];
 }
-
+*/
 
 static inline float moving_average(int sample, size_t i_or_q)
 {
@@ -513,4 +514,3 @@ int main(int argc, char *argv[])
 
     return EXIT_SUCCESS;
 }
-
